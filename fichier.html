@@ -10,21 +10,25 @@
 </head>
 
 <body>
+
     <div id="body_container">
         <div id="container_image_fond">
-            <h3>RN.</h3>
+            <header>
+                <div> <p>RN</p> <p>.</p></div>
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <div class="menu-items">
 
-            <div class="container nav-container">
-                <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" />
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
+                    </div>
                 </div>
-                <div class="menu-items">
+            </header>
 
-                </div>
-            </div>
+
 
             <h1>
                 Rando Nuit
@@ -49,28 +53,33 @@
                     Les informations pour votre randonées seront envoyée à vous et vos convives.
                 </P>
                 <div id="texte_image_container">
+                    <div class="slider-container">
+                        <div class="menu">
+                            <label for="slide-dot-1" class="fleche_haut"> <img src="fleche_haut.png" alt=""></label>
+                            <label for="slide-dot-2" class="fleche_bas"> <img src="fleche_bas.png" alt=""></label>
+                            <label for="slide-dot-3" class="fleche_bas"> <img src="fleche_bas.png" alt=""></label>
+                            <label for="slide-dot-4" class="fleche_bas"> <img src="fleche_bas.png" alt=""></label>
+                        </div>
 
-                    <div class="menu">
-                        <label for="slide-dot-1"></label>
-                        <label for="slide-dot-2"></label>
+                        <input alt="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+                        <img class="slide-img" src="dune_pila.png">
+
+                        <input alt="slide-input" id="slide-dot-2" type="radio" name="slides">
+                        <img class="slide-img" src="cevenne_by_night.jpg">
+
+                        <input alt="slide-input" id="slide-dot-3" type="radio" name="slides">
+                        <img class="slide-img" src="pyrenee.webp">
+
+                        <input alt="slide-input" id="slide-dot-4" type="radio" name="slides">
+                        <img class="slide-img" src="foret_vosgienne.jpg">
                     </div>
-
-                    <input alt="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
-                    <img class="slide-img"
-                        src="https://www.adrar-formation.com/wp-content/uploads/2022/10/propal_slider_HQ.jpeg">
-        
-                    <input alt="slide-input" id="slide-dot-2" type="radio" name="slides">
-                    <img class="slide-img"
-                        src="https://www.adrar-formation.com/wp-content/uploads/2022/10/propal_slider2_HQ.jpeg">
-        
-                  
                     <div>
                         <p>La Dune du pilat</p>
                         <p>Les cévennes by night</p>
                         <p>Les pyrénées</p>
                         <p>Foret des Vosges</p>
                     </div>
-                    <div id="image_container">
+                    <!------  <div id="image_container">
                         <div>
                             <img class="image_reserve" src="dune_pila.png" alt="dune_pila">
                         </div>
@@ -83,9 +92,8 @@
                         <div>
                             <img class="image_reserve" src="foret_vosgienne.jpg" alt="foret_vosgienne">
                         </div>
-                    </div>
+                    </div> ------->
                 </div>
-
             </div>
             <div class="bloc2">
                 <h2>
@@ -96,15 +104,17 @@
                     arcu
                     condimentum fames.
 
-                    Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque
+                    Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis.
+                    Pellentesque
                     neque
                     orci
-                    adipiscing pharetra lacus, dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id
+                    adipiscing pharetra lacus, dignissim pharetra ipsum blandit. Feugiat quis quam consectetur
+                    lectus id
                     quis
                     tortor
                     vel, mattis.
                 </p>
-                <button>En savoir plus</button>
+                <button class="button_bloc2">En savoir plus</button>
             </div>
 
             <div class="bloc3">
@@ -112,7 +122,8 @@
                 <p>
                     Une équipe d’animateur passionées.
                     Notre objectif est de vous proposée des randonnée de qualité pour des souvenirs inoubliable.
-                    Riche d’une éxpériences, longue notre équipes saura apporter à votre aventure des expertises autours
+                    Riche d’une éxpériences, longue notre équipes saura apporter à votre aventure des expertises
+                    autours
                     de
                     divers
                     domaine, plante, animaux et bien d’autres.
@@ -123,39 +134,47 @@
                 <img src="persona3.png" alt="persona3">
                 <img src="persona4.png" alt="persona4">
 
-                <button>En savoir plus</button>
+                <button class="button_bloc3">En savoir plus</button>
             </div>
 
             <div class="bloc4">
                 <h2>Ils vous raconte</h2>
                 <p>Lisez leur expérience</p>
 
-                <div>
-                    <p>Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl adipiscing natoque diam
+                <div class="profil_container">
+                    <p>Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl adipiscing natoque
+                        diam
                         et.
                     </p>
                     <img src="judith_rose.png" alt="profil">
+                    <p class="judith_texte">JUDITH ROSE</p>
                 </div>
 
-                <div>
-                    <p>Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl adipiscing natoque diam
+                <div class="profil_container">
+                    <p>Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl adipiscing natoque
+                        diam
                         et.
                     </p>
                     <img src="judith_rose.png" alt="profil">
+                    <p class="judith_texte">JUDITH ROSE</p>
                 </div>
 
-                <div>
-                    <p>Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl adipiscing natoque diam
+                <div class="profil_container">
+                    <p>Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl adipiscing natoque
+                        diam
                         et.
                     </p>
                     <img src="judith_rose.png" alt="profil">
+                    <p class="judith_texte">JUDITH ROSE</p>
                 </div>
 
-                <div>
-                    <p>Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl adipiscing natoque diam
+                <div class="profil_container">
+                    <p>Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl adipiscing natoque
+                        diam
                         et.
                     </p>
                     <img src="judith_rose.png" alt="profil">
+                    <p class="judith_texte">JUDITH ROSE</p>
                 </div>
             </div>
         </div>
