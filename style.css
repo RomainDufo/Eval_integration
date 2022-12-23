@@ -6,8 +6,15 @@
         color: #FFFFFF;
         z-index: 1;
         top: 0;
-        max-width: 375px;
+        width: 375px;
         font-family: Playfair Display;
+        padding: 0;
+        margin: 0;
+    }
+
+    #body_container {
+        padding: 0;
+        margin: 0;
     }
 
     #body_container div {
@@ -15,16 +22,19 @@
     }
 
 
-    header p{
+    header p {
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
         line-height: 190%;
-        
+        display: inline;
+        position: relative;
+        left: 34px;
+        top: 9px;
     }
 
-    header p:nth-child(2){
-        color:#00C9E0;
+    header p:nth-child(2) {
+        color: #00C9E0;
     }
 
     #container_image_fond {
@@ -37,182 +47,73 @@
         height: 1403.56px;
         width: 375px;
         z-index: 0;
-
     }
 
-    /* --------------- HAMBURGER ---------------*/
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    .container {
-        width: 64.53px;
-        height: 62px;
-        margin: auto;
-        background: #00C9E0;
-        box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
-        border-radius: 48px;
-    }
-
-    .nav-container {
-        justify-content: space-between;
-        align-items: center;
-
-    }
-
-    .nav-container {
-        display: block;
-        position: relative;
-        height: 60px;
-        right: -147px;
-        top: -52px;
-    }
-
-    .menu-items {
-        display: flex;
-    }
-
-    .menu-items li {
-        list-style: none;
-    }
-
-    /*... LIEN/TEXTE NAVBAR ...*/
-    .nav-container a {
-        text-decoration: none;
-        color: #0e2431;
-        font-weight: bolder;
-        font-size: 1.2rem;
-        padding: 0.7rem;
-    }
-
-    .nav-container ul {
-        padding-bottom: 20px;
-    }
-
-    #contact_menu button {
-        background-color: black;
-        color: white;
-        font-size: 18px;
+    .sous_titre {
+        font-style: italic;
         font-weight: 400;
-        border-radius: 5px;
-        width: 180px;
-        height: 35px;
-        text-decoration: none;
-        border-style: none;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-top: 40px;
     }
 
-    /*... FIN LIEN/TEXTE NAVBAR ...*/
-
-    .nav-container a:hover {
-        font-weight: bolder;
-    }
-
-
-
-    .nav-container .checkbox {
+    .p_h1 {
         position: absolute;
-        display: block;
-        height: 32px;
-        width: 32px;
-        top: 20px;
-        right: 22px;
-        z-index: 5;
-        opacity: 0;
-        cursor: pointer;
+        width: 328px;
+        height: 305px;
+        left: 31px;
+        top: 501px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 150%;
+        text-align: center;
+        margin-top: 40px;
     }
-
-    .nav-container .hamburger-lines {
-        display: block;
-        height: 26px;
-        width: 32px;
-        position: absolute;
-        top: 17px;
-        right: 22px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    /*..... BOUTON HAMBURGER .....*/
-
-    .nav-container .hamburger-lines .line {
-        display: block;
-        height: 2px;
-        width: 30px;
-        border-radius: 4px;
-        background: black;
-    }
-
-    .nav-container .hamburger-lines .line1 {
-        transform-origin: 0% 0%;
-        transition: transform 0.4s ease-in-out;
-    }
-
-    .nav-container .hamburger-lines .line2 {
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .nav-container .hamburger-lines .line3 {
-        transform-origin: 0% 100%;
-        transition: 0.4s ease-in-out;
-    }
-
-    /*..... FIN BOUTON HAMBURGER .....*/
-
-
-    /*..... ONGLET HAMBURGER .....*/
-    .menu-items {
-
-        background: rgb(125 143 185 / 73%);
-        border-radius: 2px;
-        padding-top: 50px;
-        height: 90vh;
-        width: 100vw;
-        transform: translate(150%);
-        display: flex;
-        flex-direction: column;
-        margin-left: -302px;
-        padding-left: 50px;
-        margin-top: 27.3px;
-        transition: transform 0.5s ease-in-out;
-        z-index: 80;
-        overflow: hidden;
-    }
-
-    .menu-items li {
-        margin-bottom: 1.2rem;
-        font-size: 1.5rem;
-        font-weight: 500;
-    }
-
-
-
-    .nav-container input[type="checkbox"]:checked~.menu-items {
-        transform: translateX(0);
-    }
-
-    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
-        transform: rotate(45deg);
-    }
-
-    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
-        transform: scaleY(0);
-    }
-
-    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
-        transform: rotate(-45deg);
-    }
-
-    .nav-container input[type="checkbox"]:checked~.logo {
-        display: none;
-    }
-
-    /*..... FIN ONGLET HAMBURGER .....*/
 
     /*-----------------------------------------------------------------------*/
+    /*..... DEBUT CORP PRINCIPAL .....*/
 
+    #container_principal {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 1px;
+        height: min-content;
+        align-self: center;
+    }
+
+    .principal_bloc1 {
+        grid-column: 1;
+        grid-row: 1/5;
+        height: 100px;
+    }
+
+    .principal_bloc2 {
+        grid-column: 1;
+        grid-row: 2/5;
+        padding: 1px 25px;
+    }
+
+
+    .principal_bloc3 {
+        grid-column: 1;
+        grid-row: 3/5;
+        padding: 1px 25px;
+    }
+
+    .principal_bloc4 {
+        grid-column: 1;
+        grid-row: 4/5;
+    }
+
+    .principal_bloc4 {
+        grid-column: 1;
+        grid-row: 5/5;
+
+    }
 
     h1 {
         text-align: center;
@@ -224,9 +125,7 @@
         font-size: 72px;
     }
 
-    #container_principal {
-        width: 320px;
-    }
+
 
     /*-----------------------------------------------------------------------*/
 
@@ -237,18 +136,55 @@
         position: relative;
         margin: auto;
         height: 300px;
-        overflow: hidden;
         z-index: 0;
         top: 25px;
+    }
+
+    .fleche_slider {
+        position: relative;
+        left: 177px;
+    }
+
+    .texte_slider {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: -111px;
+        width: 81px;
+        justify-content: center;
+        gap: 34px;
+        border-right-style: ridge;
+        border-color: #41EAD4;
+        margin-left: 15px;
+    }
+
+    .texte_slider p {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        writing-mode: tb;
+        font-family: 'ABeeZee';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 110%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #41EAD4;
+    }
+
+    .texte_label {}
+
+    .fleche_slider label {
+        background: #011627;
     }
 
     .menu {
         position: absolute;
         display: flex;
         flex-direction: column;
-
         z-index: 120;
-        width: 100%;
+        width: 10%;
     }
 
     .menu label {
@@ -258,7 +194,6 @@
         width: 37.5px;
         height: 36px;
         margin: 0 0.1em 10px;
-        background: #011627;
         box-shadow: -10px 14px 24px rgb(1 22 39 / 8%);
         transform: rotate(-90.7deg);
     }
@@ -266,6 +201,10 @@
     .menu label:hover,
     .menu label:focus {
         background: #1c87c9;
+    }
+
+    .input_button {
+        visibility: hidden;
     }
 
     .slide-input {
@@ -277,12 +216,11 @@
         height: 259px;
         position: absolute;
         border-radius: 8px;
-        left: 100%;
+        left: 48%;
         transition: left 0s 0.10s;
     }
 
     [id^="slide"]:checked+.slide-img {
-        left: -30%;
         z-index: 100;
         transition: left 0.01s ease-out;
 
@@ -303,7 +241,7 @@
     }
 
 
-
+    /*--- BLOC PROFIL EXPERIENCE ---*/
     .profil_container {
         background-color: #02223B;
         width: 282px;
@@ -324,6 +262,7 @@
         line-height: 190%;
     }
 
+    /*--- BOUTON ---*/
     button {
         text-transform: uppercase;
         color: #FFFFFF;
@@ -353,7 +292,42 @@
         left: 78px;
     }
 
+    /*---------------------------------------------------*/
     /*--- FOOTER ---*/
+
+    #container_footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 10px;
+        max-width: 375px;
+
+    }
+
+    .footer_bloc1 {
+        grid-column: 1;
+        grid-row: 1/5;
+    }
+
+    .footer_bloc2 {
+        grid-column: 1;
+        grid-row: 2/5;
+    }
+
+    .footer_bloc3 {
+        grid-column: 1;
+        grid-row: 3/5;
+    }
+
+    .footer_bloc4 {
+        grid-column: 1;
+        grid-row: 4/5;
+    }
+
+    .footer_bloc5 {
+        grid-column: 1;
+        grid-row: 5/5;
+    }
 
     #container_footer div {
         text-align: center;
@@ -368,9 +342,7 @@
         padding: 10px 20px;
     }
 
-    #container_footer h3{
-        margin-top: 35px;
-    }
+    #container_footer h3 {}
 
     #ligne {
         display: flex;
