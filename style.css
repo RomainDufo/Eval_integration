@@ -202,7 +202,7 @@
         flex-direction: column;
         margin-left: -23px;
         padding-left: 15px;
-        text-align: center; 
+        text-align: center;
     }
 
     .menu-items li {
@@ -234,6 +234,15 @@
 
     /*..... FIN ONGLET HAMBURGER .....*/
     /*-----------------------------------------------------------------------*/
+    .gradient_image {
+        position: absolute;
+        width: 1920px;
+        height: 491px;
+        left: 1px;
+        top: 1028px;
+        background: linear-gradient(180deg, rgba(1, 22, 39, 0) 0%, #011627 76.64%, #0b2e4b 100%);
+    }
+
     /*..... DEBUT CORP PRINCIPAL .....*/
 
     #container_principal {
@@ -250,6 +259,38 @@
         grid-column: 1;
         grid-row: 1/5;
         height: 100px;
+        position: absolute;
+    }
+
+    #point_bleue {
+        border: none;
+        border-top: 8px dotted #41EAD4;
+        color: #fff;
+        position: absolute;
+        width: 162.87px;
+        height: -17.62px;
+    }
+
+    .point_bleue1 {
+        left: 210px;
+        top: 260px;
+    }
+
+    .point_bleue2 {
+        left: 206.46px;
+        top: 272px;
+    }
+
+    .point_bleue3 {
+        left: 283.46px;
+        top: 170px;
+        transform: rotate(-89.65deg);
+    }
+
+    .point_bleue4 {
+        left: 272.46px;
+        top: 170px;
+        transform: rotate(-89.65deg);
     }
 
     .principal_bloc1 p {
