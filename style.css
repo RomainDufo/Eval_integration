@@ -857,12 +857,10 @@
         height: 68px;
     }
 
-    .texte_slider p {}
-
-    .texte_label {
-        position: absolute;
-        left: 10px;
-        top: 10px;
+    .fleche_slider {
+        position: relative;
+        left: 683px;
+        top: 237px;
     }
 
     .texte_slider label {
