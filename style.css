@@ -680,6 +680,8 @@
     }
 }
 
+/*------------------------------------------------------------*/
+
 @media only screen and (min-width: 900px) {
     body {
         min-width: 900px;
@@ -692,6 +694,58 @@
     #body_container div {
         max-width: 900px;
     }
+
+    .trait_blanc {
+        position: absolute;
+        right: -14px;
+        top: 211px;
+        width: 30px;
+        height: 2px;
+    }
+
+    /*----- BOUTON RECHERCHE/LOUPE -----*/
+    #bouton_loupe_container {
+        position: absolute;
+        top: 80px;
+        left: 200px;
+    }
+
+    #bouton_loupe {
+        position: absolute;
+        top: 59px;
+        left: 420px;
+        height: 50px;
+        width: 50px;
+        background: transparent;
+    }
+
+    #style_container {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+    }
+
+    .cercle {
+        height: 19px;
+        width: 19px;
+        border-radius: 11px;
+        position: absolute;
+        top: 71px;
+        left: 432px;
+        border: 2px solid #FFFFFF;
+    }
+
+    .barre {
+        width: 10px;
+        border-radius: 0px;
+        position: absolute;
+        top: 87px;
+        left: 448px;
+        border: 1px solid #FFFFFF;
+        transform: rotate(34deg);
+    }
+
+    /*----- FIN BOUTON RECHERCHE/LOUPE -----*/
 
     #container_image_fond {
         background-image: url("ciel_etoile_1.png");
@@ -748,7 +802,7 @@
         opacity: 0;
         cursor: pointer;
     }
-    
+
     #bloc_header {
         position: inherit;
         top: 365px;
@@ -778,5 +832,40 @@
         text-align: center;
         letter-spacing: -0.02em;
         margin: 31px 162px;
+    }
+
+    /*----- BLOC RESERVE VOTRE RANDO -----*/
+    .slide-img {
+        width: 550px;
+        left: 24%;
+    }
+
+    .point_container {
+        position: absolute;
+        left: 528px;
+        top: 63px;
+        transform: scaleX(-1);
+    }
+
+    .texte_slider {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 22px;
+        left: 308px;
+        width: 253px;
+        height: 68px;
+    }
+
+    .texte_slider p {}
+
+    .texte_label {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    .texte_slider label {
+        margin: 1px 40px;
     }
 }
